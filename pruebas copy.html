@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AcsaCorp</title>
+    
+    
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+
+    
+
+    <link rel="stylesheet" href="css/style.css">
+   
+
+    
+  </head>
+  <body>
+  
+    <div class="sticky-top nav-acsa header-pc ">
+    <nav class=" container-fluid navbar navbar-expand-lg bg-body-tertiary ">
+      <div class="container-fluid ">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="d-flex justify-content-center">
+          <a class="navbar-brand" href="#"><img src="images/ACSA-WEB.png" class="img-fluid" alt=""></a>
+        </div>
+        
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active letra-nav" aria-current="page" href="#">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link letra-nav" href="#">PRODUCTOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link letra-nav" href="#" >COTIZADOR </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link letra-nav" href="#">CONTACTO</a>
+            </li>
+          </ul>
+           <div class="d-flex">
+            <a class="nav-link " aria-current="page" href="#">
+              <i class="bi bi-whatsapp px-2 icono-redes"></i></a>
+              <a class="nav-link " aria-current="page" href="#">
+                <i class="bi bi-facebook px-2 icono-redes"></i></a>
+                <a class="nav-link " aria-current="page" href="#">
+                  <i class="bi bi-youtube px-2 icono-redes"></i></a>
+                  <a class="nav-link " aria-current="page" href="#">
+                    <i class="bi bi-whatsapp px-2 icono-redes"></i></a>
+           </div>
+        </div>
+      </div>
+    </nav>
+
+
+    </div>
+
+<!-- -------------------------  HEADER MOVIL--------------- -->
+
+
+    <header class="sticky-top navbar-expand-lg header-mv ">
+      
+      <nav class="container-fluid navbar navbar-scroll navbar-expand-lg bg-body-tertiary   ">
+        <div class="container-fluid">
+          
+
+          <button
+            class="navbar-toggler "
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions"
+            aria-controls="offcanvasWithBothOptions"
+          >
+            <i class="bi bi-three-dots text-white"></i>
+          </button>
+          <div class="d-flex justify-content-center">
+            <a class="navbar-brand" href="#"><img src="images/ACSA-WEB.png" class="img-fluid" alt=""></a>
+          </div>
+
+          
+
+          <div
+            class="offcanvas offcanvas-start  "
+            data-bs-scroll="true"
+            tabindex="-1"
+            id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel"
+          >
+            <div class="offcanvas-header bg-color-primario">
+              <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                <img
+              class="imagen-logo-acsa"
+              src="images/ACSA-WEB.png"
+              class="rounded-pill py-2"
+              alt="Logo AcsaCorp"
+              width="100"
+          />
+              </h5>
+              
+              <button
+                type="button"
+                class="btn-close "
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+              
+            </div>
+
+            <div class="offcanvas-body bg-color-primario ">
+              <hr class="d-lg-none text-white-50">
+              <ul class="nav ">
+                <li class="nav-item">
+                  <a class="nav-link text-white" aria-current="page" href="#"
+                    >Productos</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Disabled</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <i class="bi bi-three-dots text-white"></i>
+          </button>
+
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header bg-color-primario">
+              <div class="offcanvas-title text-white id="offcanvasNavbarLabel">
+                <img
+              class="imagen-logo-acsa d-block"
+              src="images/ACSA-WEB.png"
+              class="rounded-pill py-2"
+              alt="Logo AcsaCorp"
+              width="100"
+          />
+          <h6 class="pt-2">TU ALIADO DE CONFIANZA </h6>
+          
+              </div>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body bg-color-primario">
+              <hr class="d-lg-none text-white-50">
+              <div class="">
+
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 w-80">
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="tel:013116900"
+                      > <i class="bi bi-telephone px-2"></i> Central Telefonica : +51 3116900</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link text-white" aria-current="page" href="#"
+                      ><i class="bi bi-whatsapp px-2"></i
+                    >  Contacta con un Asesor Comercial</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" aria-current="page" href="mailto:ventas@acsa.com.pe"
+                      ><i class="bi bi-envelope px-2"></i>
+                        ventas@acsa.com.pe</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#"
+                      ><i class="bi bi-facebook px-2"></i
+                    >  Facebook</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#"
+                      ><i class="bi bi-instagram px-2"></i
+                    >  Instagram</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#"
+                      ><i class="bi bi-instagram px-2"></i
+                    >  Instagramm</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#"
+                      ><i class="bi bi-instagram px-2"></i
+                    >  Instagram</a>
+                  </li>
+                </ul>
+
+
+              </div>
+              
+            
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </nav>
+
+
+
+
+
+
+
+
+              <!-- ------- BARRA DE BUSQUEDA EN MOVIL-----  -->
+
+
+              <!-- <div class="navbar-expand  nav-busqueda ">
+                <div class="container py-1 px-3">
+                  <div class="row">
+
+                    <div class="navbar-item ">
+                      <form class="d-flex input-group">
+                        <input class="form-control mx-2 " type="search" placeholder="Busca tu Producto Aqui " aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                      </form>
+                    </div>
+                  </div>
+               </div>
+                
+              </div> -->
+        <!-- ------ FIN BARRA DE BUSQUEDA-----  -->
+
+
+    </header>
+    
+
+<!-- ------------------------- FIN  HEADER MOVIL--------------- -->
+
+
+    <!-- CAROUSEL  -->
+    <!-- CAROUSEL  -->
+    <!-- CAROUSEL  -->
+
+
+    <div class="container-fluid g-0 slider-acsa">
+      <div id="carouselExampleCaptions" class="carousel slide"  data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+  
+        <!-- contenido  -->
+        
+        <div class="carousel-inner">
+          <div class="carousel-item active bg1-carousel   ">
+            
+            
+              
+          </div>
+          
+
+
+          <div class="carousel-item bg2-carousel ">
+            
+          </div>
+          
+          
+          <div class="carousel-item bg3-carousel ">
+            
+          </div>
+        </div>
+        
+  
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      
+      
+      </div>
+
+
+    </div>
+
+
+    <div class="marcasPropias-acsa row ">
+      <p>Nuestras marcas Propias</p>
+     
+      <!-- <i class="bi bi-badge-8k-fill custom-icon col d-flex justify-content-evenly align-items-center "></i>
+      <i class="bi bi-badge-8k-fill custom-icon col d-flex justify-content-evenly align-items-center "></i>
+      <i class="bi bi-badge-8k-fill custom-icon col d-flex justify-content-evenly align-items-center"></i>
+      <i class="bi bi-badge-8k-fill custom-icon col d-flex justify-content-evenly align-items-center"></i>
+      <i class="bi bi-badge-8k-fill custom-icon col d-flex justify-content-evenly align-items-center"></i>
+      <i class="bi bi-badge-8k-fill custom-icon col d-flex justify-content-evenly align-items-center"></i> -->
+    </div>
+   
+
+
+      <!-- PRODUCTOS DESTACADOS-->
+
+      <div class="container productosDestacado-acsa">
+        <h2 class="text-center pt-5 pb-2"> Productos Destacados   </h2> <i class="bi bi-badge-8k-fill custom-icon "></i>
+
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-12 col-md-6 col-lg-4 col-xl-3 mt-2 d-flex justify-content-center"
+            >
+              <div class="card" style="width: 20rem">
+                <img src="images/crcx250.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title">
+                    LIMPIA CONTACTO ELECTRICO QD 82130 1130 OZ SPRAY
+                  </h6>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">
+                    CRCsssss
+                  </h6>
+                  <p class="card-text mb-2 text-body-secondary">
+                    Limpiador de Precision
+                  </p>
+                  <p class="card-text mb-2 text-body-secondary">Stock</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-12 col-md-6 col-lg-4 col-xl-3 mt-2 d-flex justify-content-center"
+            >
+              <div class="card" style="width: 20rem">
+                <img src="images/crcx250.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title">
+                    LIMPIA CONTACTO ELECTRICO QD 82130 1130 OZ SPRAY
+                  </h6>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">CRC</h6>
+                  <p class="card-text mb-2 text-body-secondary">
+                    Limpiador de Precision
+                  </p>
+                  <p class="card-text mb-2 text-body-secondary">Stock</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-12 col-md-6 col-lg-4 col-xl-3 mt-2 d-flex justify-content-center"
+            >
+              <div class="card" style="width: 20rem">
+                <img src="images/crcx250.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title">
+                    LIMPIA CONTACTO ELECTRICO QD 82130 1130 OZ SPRAY
+                  </h6>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">CRC</h6>
+                  <p class="card-text mb-2 text-body-secondary">
+                    Limpiador de Precision
+                  </p>
+                  <p class="card-text mb-2 text-body-secondary">Stock</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-12 col-md-6 col-lg-4 col-xl-3 mt-2 d-flex justify-content-center"
+            >
+              <div class="card" style="width: 20rem">
+                <img src="images/crcx250.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title">
+                    LIMPIA CONTACTO ELECTRICO QD 82130 1130 OZ SPRAY
+                  </h6>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">CRC</h6>
+                  <p class="card-text mb-2 text-body-secondary">
+                    Limpiador de Precision
+                  </p>
+                  <p class="card-text mb-2 text-body-secondary">Stock</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- carousel 2 -->
+
+    <div class="container my-5">
+        <h2 class="text-center mb-5"> Nuestras Marcas</h2>
+
+
+      <div id="carouselExampleCaptions2" class="carousel slide "  data-bs-ride="true">
+        
+  
+  
+        <div class="carousel-inner">
+          <div class="carousel-item active mb-5 ">
+
+            
+            <div class="row ">
+              <div class="col-4"><img src="images/a4.webp" class="img-fluid" alt="..."></div>
+              <div class="col-4"><img src="images/a4.webp" class="img-fluid" alt="..."></div>
+              <div class="col-4"><img src="images/a4.webp" class="img-fluid" alt="..."></div>
+            </div>
+
+            <div class="carousel-caption d-none d-md-block text-slider"></div>
+         
+          </div>
+          <div class="carousel-item  mb-5 ">
+            <div class="row ">
+              <div class="col-4"><img src="images/a4.webp" class="img-fluid" alt="..."></div>
+              <div class="col-4"><img src="images/a4.webp" class="img-fluid" alt="..."></div>
+              <div class="col-4"><img src="images/a4.webp" class="img-fluid" alt="..."></div>
+            </div>
+          
+          </div>
+          <div class="carousel-item  mb-5 ">
+            <div class="row ">
+              <div class="col-4"><img src="images/a4.webp" class="img-fluid" alt="..."></div>
+              <div class="col-4"><img src="images/a4.webp" class="img-fluid" alt="..."></div>
+              <div class="col-4"><img src="images/a4.webp" class="img-fluid" alt="..."></div>
+            </div>
+           
+          </div>
+        </div>
+        
+  
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      
+      
+      </div>
+     </div>
+     
+     <!-- FIn carousel 2 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- BANER -->
+
+      <div class="container g-0 banner" >
+        <img src="images/banner.jpeg" class="img-fluid" alt="">
+
+
+      </div>
+
+
+
+
+    <footer class="sticky-bottom footer">
+      <nav class="  ">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 mt-2 col-md-3 d-flex">
+              <div><i class="bi bi-whatsapp"></i></div>
+              <p class="ps-2 fs-6">Contacta con un Asesor</p>
+            </div>
+            <div class="col-6 mt-2 col-md-3 d-flex">
+              <div><i class="bi bi-telephone"></i></div>
+              <p class="ps-2 fs-6">+51 311 6900</p>
+            </div>
+
+            <div class="col-6 mt-2 col-md-3 d-flex">
+              <div><i class="bi bi-envelope"></i></div>
+              <p class="ps-2 fs-6">ventas@acsa.com.pe</p>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </footer>
+
+
+
+    
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+     <script src="js.js"></script>
+
+    
+
+
+     
+  </body>
+</html>
+
+
