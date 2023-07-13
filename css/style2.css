@@ -187,6 +187,7 @@
     display: inline; 
   }
 
+  
   .header-pc nav{
     padding: 0px 0px;
   }
@@ -438,11 +439,11 @@
 
 
 
-
+/* Barra inferior de contacto Pc */
 
 .barra-inferior{
-  background-color: var(--first-color);
-  
+  display: block;
+  background-color: var(--first-color); 
 }
 
 .barra-inferior div div div a{
@@ -451,14 +452,15 @@
 }
 .barra-inferior div div div a:hover{
   color: rgb(25, 2, 80)!important;
-  font-weight: bold;
-  
+  font-weight: bold;  
 }
+/* Fin Barra inferior de contacto Pc */
 
 
-
+/* Barra de busqueda para Pc */
 
   .busqueda-pc{
+    display: block;
     background-image: url(../images/dos-colegas-fabrica.jpg);
     position: relative;
     
@@ -498,8 +500,12 @@
     
   }
 
- /* boton de whatsapp */
-.whatsapp-button{
+  /* Fin Barra de busqueda   */
+
+  /* boton de whatsapp */
+
+
+ .whatsapp-button{
   position: fixed;
   bottom: 380px;
   right:20px;
@@ -535,32 +541,23 @@
 
 
 
-
-
-
-
-
-
-
-
  /* barra de busqueda scroll  */
 
 
-  .nav-acsa{
+  /* .nav-acsa{
     position:"";
     z-index: 3;
   
   }
   
-  /* .slider-acsa{
+  .slider-acsa{
     position:absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: 2; 
-  
-  } */
+  }  */
 
 
 
@@ -723,9 +720,10 @@
    }
 
    .footer-acsa-pc{
+     display: block;
      background-color: dimgrey;
      height: auto;
-     color: white;
+     color: rgb(8, 8, 8);
      font-size: 15px;
      
      
