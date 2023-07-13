@@ -1,0 +1,757 @@
+/* *********************** Custom Properties ******************************** */
+
+:root {
+  --first-color:rgb(29, 94, 169);
+  --first-alpha-color:rgb(29, 94, 169, 0.6);
+  /* --second-color:#657A99; */
+  --second-color:rgb(74, 193, 239); 
+  --second-alpha-color:rgb(74, 193, 239, 0.75);
+
+  --bg-color:rgb(29, 94, 169);
+  --bg-alpha-color:rgb(29, 94, 169, 0.75);
+
+  --bg-gradient-color : linear-gradient(to right, blue, pink);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap'); /*font-family: 'Poppins', sans-serif*/
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Roboto+Condensed:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Kanit:wght@300&family=Roboto+Condensed:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Kanit:wght@300&family=Roboto+Condensed:wght@300;700&display=swap');
+
+.bg-color-primario{
+  background-color: var(--first-color);
+}
+ .bg.color-secundario{
+  background-color: var(--second-color);
+ }
+
+ .bg.color-primario-alfa{
+  background-color: var(--first-alpha-color);
+ }
+
+ *{
+  font-family: 'Poppins';
+ }
+
+ .header-pc {
+  display: none;
+ }
+ .busqueda-pc{
+  display: none;
+ }
+
+ .footer-acsa-pc{
+  display: none;
+ }
+ .barra-inferior{
+  display: none;
+ }
+ .barra-derechos{
+  display: none;
+ }
+
+
+ .header-mv{
+  background-color: var(--bg-color);
+  
+  
+ }
+
+  /* icono de acsa en movil  */
+  .header-mv nav div div a img{
+    height: 50px;
+  }
+
+  .btn-primary{
+    background: var(--second-color);
+    color: black !important;
+  }
+
+
+
+  /* carousel  */
+
+  .bg1-carousel{
+    background-image: url(../images/xx.jpeg);
+    min-height: 300px;
+    background-size:cover;
+    background-position: center;
+  
+  }
+
+
+  .bg2-carousel{
+    background-image: url(../images/xxx2.jpeg);
+    min-height: 300px;
+    background-size:cover;
+    background-position: center;
+  }
+
+  .bg3-carousel{
+    background-image: url(../images/xxx3.jpeg);
+    min-height: 300px;
+    background-size:cover;
+    background-position: center;
+
+  }
+
+  .btn-carousel{
+    display: none;
+  }
+
+
+
+
+ .productosDestacados-acsa{
+  margin-top: 10px;
+ }
+  .card img{
+    
+    width: 150px;
+    height: auto;
+  }
+
+
+  .footer-acsa {
+    background-color: rgb(39, 9, 104);
+  }
+
+  .footer-acsa button{
+    background-color: rgb(39, 9, 104);
+  }
+
+  .accordion-item{
+    background-color: rgb(39, 9, 104);
+    border-radius: none !important;
+  }
+   /* estilo del boton presionado  */
+  
+   .accordion-button{
+    background-color: rgb(39, 9, 104)!important;
+    color: white !important;
+    box-shadow: none !important; /* Para quitar el borde sombreado al presionar */
+   
+  }
+
+  .collapsed{
+    background-color: rgb(39, 9, 104)!important;
+    border-radius: none !important;
+  }
+
+ 
+
+
+
+
+
+/* web login de cotizador  */
+/* web login de cotizador  */
+/* web login de cotizador  */
+.login-cotizador-mv{
+  background-color: orangered;
+  height: 60vh;
+  width: auto;
+  margin-top: 20px;
+  border-radius: 5%;
+}
+.login-cotizador-mv div img{
+  padding-top: 20px;
+  width: 200px;
+  border-radius: 50%;
+}
+.input-form-acsa {
+  height: 10px !important;
+}
+.input-form-acsa label {
+  position: absolute !important;
+}
+
+
+
+
+
+
+
+/* media a partir de 766px   */
+/* media a partir de 766px   */
+/* media a partir de 766px   */
+
+  @media (min-width: 766px) {
+    
+  .header-mv {
+  display: none;
+  }
+
+  .header-pc{
+    display: inline; 
+  }
+
+  .header-pc nav{
+    padding: 0px 0px;
+  }
+
+
+ /* Logo de acsa en pc  */
+  .nav-acsa nav div div a img{
+    height: 35px;
+  }
+
+  .letra-nav{
+    color: white!important;
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 1px;
+    font-size: 14px;
+  }
+
+/* Estilos para el botón y el contenedor del menú  */
+.dropdown-acsa {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn-acsa {
+  background-color: white;
+  color: var(--first-color);
+  padding-top: 10px;
+  
+  font-size: 35px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilos para el contenido del menú desplegable */
+.dropdown-content-acsa {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  z-index: 2;
+}
+
+.dropdown-content-acsa a {
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content-acsa a:hover{
+  color: blue;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  
+}
+
+.dropdown-acsa:hover .dropdown-content-acsa {
+  display: block;
+}
+
+
+  /* Iconos de redes sociales en pc  */
+
+
+
+  /* estilos login dropdown  */
+   .dropdown-acsa-login {
+    position: relative;
+    display: inline-block;
+  }
+   /* estilos del icono  */
+  .dropbt-acsa-login {
+    background-color: white;
+    color: var(--first-color);
+  
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+   
+  }
+
+  .dropbt-acsa-login:hover{
+    color: var(--second-color);
+  }
+ 
+ 
+/* Estilos para el contenido del menú desplegable */
+
+.dropdown-content-acsa-login {
+  display: none;
+  position: absolute;
+  right: 5px;
+  top: 40px;
+  background-color: white;
+  min-width: 300px;
+  min-height:300px;
+  z-index: 2;
+  
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ 
+}
+
+/* titulo del contenido  */
+.dropdown-content-acsa-login div p {
+  margin-top: 25px;
+  color:var(--first-color);
+  font-size: 16px;
+  
+   
+}
+.dropdown-content-acsa-login div  button{
+  background-color: var(--first-color);
+  padding: 5px;
+  color: white;
+  font-size: 12px;
+  border: none;
+  margin-top: 10px;
+  border-radius: 25px;
+ 
+}
+
+.dropdown-content-acsa-login div  button:hover{
+  background-color: rgb(29, 94, 169,0.9);
+  
+
+}
+
+
+.dropdown-content-acsa-login div  button:nth-child(3){
+  background-color: rgb(255, 255, 255);
+  padding: 5px;
+  color: var(--first-color);
+  font-size: 12px;
+  border: 1px solid var(--first-color);
+  
+  margin-top: 10px;
+  border-radius: 25px;
+  
+}
+
+.dropdown-content-acsa-login div p:nth-child(4){
+  text-align: center;
+  margin-top: 12px;
+  font-size: 10px;
+}
+
+
+
+
+
+
+.dropdown-content-acsa-login a:hover{
+  color: blue;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  
+}
+
+.dropdown-acsa-login:hover .dropdown-content-acsa-login {
+  display: block;
+}
+
+
+
+
+
+
+  /* estilos contacto dropdown  */
+ /* estilos contacto dropdown  */
+
+  .dropdown-acsa-contacto {
+    position: relative;
+    display: inline-block;
+  }
+  .dropbt-acsa-contacto {
+    background-color: white;
+    color:var(--first-color);
+    padding: 5px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+  }
+ 
+/* Estilos para el contenido del menú desplegable */
+.dropdown-content-acsa-contacto {
+  display: none;
+  position: absolute;
+  right:px;
+  top: 40px;
+  background-color: white;
+  min-width: 260px;
+  min-height:250px;
+  z-index: 2;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* titulo del contenido  */
+.dropdown-content-acsa-contacto div p {
+  margin-top: 25px;
+  color:var(--first-color);
+  font-size: 18px;
+  
+   
+}
+
+ 
+.dropdown-content-acsa-contacto div a{
+  padding: 10px;
+  background-color: white;
+  color: var(--first-color);
+  font-size: 14px;
+}
+
+.dropdown-content-acsa-contacto div a:hover{
+  background-color: var(--first-color);
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  
+  
+}
+
+
+.dropdown-content-acsa-contacto a{
+  text-decoration: none;  
+}
+
+.dropdown-acsa-contacto:hover .dropdown-content-acsa-contacto {
+  display: block;
+}
+
+
+.dropbt-acsa-face{
+  background-color: white;
+  color: var(--first-color);
+ 
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.dropbt-acsa-face:hover{
+  color: var(--second-color);
+}
+
+
+
+
+
+
+
+.barra-inferior{
+  background-color: var(--first-color);
+  
+}
+
+.barra-inferior div div div a{
+  color: white;
+  text-decoration: none;
+}
+.barra-inferior div div div a:hover{
+  color: rgb(25, 2, 80)!important;
+  font-weight: bold;
+  
+}
+
+
+
+
+  .busqueda-pc{
+    background-image: url(../images/dos-colegas-fabrica.jpg);
+    position: relative;
+    
+    min-height: 120px;
+    
+    background-size:cover;
+    background-position: center; 
+  }
+   
+  .busqueda-pc::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.7) ;
+  }
+
+  .formulario-busqueda{
+    padding-top: 15px;
+    position: relative;
+    z-index: 1;
+    
+  }
+
+  .formulario-busqueda p {
+    font-size: 20px;
+    letter-spacing:2px;
+    color: rgb(255, 254, 254);
+  }
+  .btn-acsa{
+    background-color: crimson!important;
+    color: white;
+    font-weight: bold;
+    width: 120px;
+    
+  }
+
+ /* boton de whatsapp */
+.whatsapp-button{
+  position: fixed;
+  bottom: 380px;
+  right:20px;
+  color: white;
+  font-size: 80px;
+  z-index: 10;
+  background-color: green;
+  background-position: center;
+  height: 100px;
+  width:100px;
+  border-radius: 50%;
+  border: solid 1px;
+  padding:10px;
+  display: flex;
+ 
+  justify-content: center;
+  align-items: center;
+  animation-name: animacion-whatsapp;
+  animation-duration: 1s;
+  animation-iteration-count: 5;
+}
+
+@keyframes animacion-whatsapp{
+  0% {
+    transform: scale(1,1) rotate(0deg);
+  }
+  50%{
+    transform: scale(0.85,0.85) rotate(5deg);
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ /* barra de busqueda scroll  */
+
+
+  .nav-acsa{
+    position:"";
+    z-index: 3;
+  
+  }
+  
+  /* .slider-acsa{
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2; 
+  
+  } */
+
+
+
+  .bg1-carousel{
+    background-image: url(../images/xx.jpeg);
+    min-height: 680px;
+    background-size:cover;
+    background-position: center;
+  
+  }
+
+  .bg2-carousel{
+    background-image: url(../images/xxx2.jpeg);
+    min-height: 680px;
+    background-size:cover;
+    background-position: center;
+  }
+
+  .bg3-carousel{
+    background-image: url(../images/xxx3.jpeg);
+    min-height: 680px;
+    background-size:cover;
+    background-position: center;
+
+  }
+
+ 
+
+  .btn-carousel{
+    display: inline;
+    background: rgb(151, 22, 22);
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    color: white;
+    font-weight: bold;
+    border-radius: 12px;
+    letter-spacing: 1px;
+    position: relative;
+    top: 500px;
+    left: 250px;
+    right: 0;
+    bottom: 0;
+    
+    
+  }
+
+
+  .btn-carousel:hover{
+    background-color: blue;
+  }
+
+ /* .btn-carousel::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 120%;
+    height: 120%;
+    background: linear-gradient(45deg, red,blue,deeppink,blue, red,blue,deeppink,blue);
+    background-size: 800%;
+    filter: blur(10px);
+    
+    animation: glowing 20s linear infinite;
+
+ }
+ @keyframes glowing{
+  0%{
+    background-position: 0 0;
+  }
+  50%{
+    background-position: 400% 0;
+  }
+  100%{
+    background-position: 0 0;
+  }
+
+ } */
+
+ /* Nuestras marcas */
+
+ 
+ .nuestras-marcas div div div {
+  background-color: rgb(255, 255, 255);
+ }
+ 
+ .nuestras-marcas div div div:hover {
+  background-color: rgb(217, 217, 230);
+ 
+ }
+
+
+
+
+
+ .banner-1 {
+ 
+  background-color: rgb(234, 234, 241);
+  padding:10px;
+  
+}
+
+
+
+ .card img{
+    
+  width: 250px;
+  height: auto;
+}
+  
+ .productosDestacados-acsa{
+    margin-top: 10px;
+
+  }
+
+
+  .banner-3 {
+    background-color: rgb(234,234,241);
+    padding: 20px ;
+  }
+
+
+  .login-cotizador{
+    background-color: orangered;
+    height: 80vh;
+  }
+
+
+  }
+
+/*  mediaaa*/
+/*  mediaaa*/
+/*  mediaaa*/
+/*  mediaaa*/
+/*  mediaaa*/
+
+
+  @media (min-width: 992px){
+     /* Logo de acsa en pc  */
+  .nav-acsa nav div div a img{
+    height: 40px;
+  }
+  .icono-lista{
+    font-size: 16px;
+    color:  rgb(39, 9, 104);
+  }
+
+  .letra-nav{
+    letter-spacing: 2px;
+    font-size: 16px;
+  }
+
+  /* Iconos de redes sociales en pc  */
+
+   
+
+   .footer-acsa{
+    display: none;
+   }
+
+   .footer-acsa-pc{
+     background-color: dimgrey;
+     height: auto;
+     color: white;
+     font-size: 15px;
+     
+     
+   }
+   .footer-acsa-pc a{
+    text-decoration: none;
+    color: white;
+
+   }
+   .iconos-footer-pc{
+    font-size: 20px;
+   }
+
+   .iconos-footer-pc a:hover{
+    color: rgb(153, 51, 65);
+
+   }
+
+
+   .titulos-footer-pc{
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+   }
+
+
+  }
+

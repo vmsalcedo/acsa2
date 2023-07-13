@@ -21,3 +21,7 @@ window.addEventListener('scroll', function() {
       myNavbar.classList.remove('navbar-scrolled');
     }
   });
+
+
+
+  
